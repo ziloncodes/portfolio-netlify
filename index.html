@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Iziegbe Erazua Portfolio, Frontend Development." >
+    <meta name="keywords" content="Iziegbe Erazua Portfolio, Frontend Development, HTML, CSS, Javascript, ReactJS, Tailwind" >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <title>Iziegbe Erazua Portfolio</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Iziegbe Erazua</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Iziegbe Erazua</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!--Profile Section-->
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./images/profile-pic.jpeg" 
+            alt="Iziegbe's Profile picture"
+            class="profile-image" >
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Iziegbe Erazua</h1>
+            <p class="typewriter"><span id="changing-text"></span></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/IZIEGBE ERAZUA Internship CV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./images/linkedin.png" 
+                alt="linkedin" 
+                class="icon"
+                onclick="location.href='./#contact'" />
+
+                <img src="./images/github.png" 
+                alt="github" 
+                class="icon"
+                onclick="location.href='https://github.com/ziloncodes'" />
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+        <p class="section-text-p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./images/about-pic.jpeg" 
+                alt="profile picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./images/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>6+ months <br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./images/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Science (B.Sc.)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>A Frontend Developer with a strong foundation in HTML, CSS, and Javascript. 
+                        Highly motivated and self-driven with an ability to collaborate effectively 
+                        with team members and Senior Developers while spending extra time to be 
+                        mentored. Seeking an internship opportunity to gain practical experience, 
+                        further develop technical skills and contribute to innovative web 
+                        development projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+
+    <!--Experience Section-->
+    <section id="experience">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>RWD</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>Git & Version control</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>Visual Studio Code</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" 
+                                alt="experience icon" 
+                                class="icon"
+                            >
+                            <div>
+                                <h3>Github</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+
+    <!--Project Section-->
+    <section id="projects">
+        <p class="section-text-p1">Browse my Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container flex-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./images/sunnyside-1.png" alt="project 1"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/ziloncodes/sunnysideAgencyLandingPage'">Github</button>
+
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://ziloncodes.github.io/sunnysideAgencyLandingPage/'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./images/interactive-card-2.png" alt="project 2"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/ziloncodes/interactiveCardDetailsForm'">Github</button>
+
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://ziloncodes.github.io/interactiveCardDetailsForm/'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./images/notification-page.png" alt="project 3"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/ziloncodes/notificationPage'">Github</button>
+
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://ziloncodes.github.io/notificationPage/'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./images/tip-calculator-active.png" alt="project 4"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Four</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/ziloncodes/tipCalculatorApp'">Github</button>
+
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://ziloncodes.github.io/tipCalculatorApp/'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="" class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./images/email.png" alt="email icon"
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:iziegbeerazua@gmail.com">iziegbeerazua@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./images/linkedin.png" alt="linkedin icon"
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/iziegbe-erazua-3aab18138">Iziegbe Erazua</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>copyright &#169; 2023 Iziegbe Erazua. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
