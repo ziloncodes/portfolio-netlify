@@ -6,6 +6,9 @@
     .about-container {
         flex-wrap: wrap;
     }
+    #experience {
+        width: 60%;
+    }
 }
 
 @media  screen and (max-width: 1200px) {
